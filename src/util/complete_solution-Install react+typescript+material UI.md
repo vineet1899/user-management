@@ -1,4 +1,5 @@
-# Creating a React-MUI-TypeScript Template
+# Complete steps Install react+typeScript+MUI with env and tsconfig
+
 The purpose of this tutorial is to document the step by step on how to create a [React-MUI-TypeScript Template](https://github.com/equisoide/react-mui-ts-template) from scratch, so that it will serve as a reference guide for myself and for others.
 
 ## 1. Install required libraries
