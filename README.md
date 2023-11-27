@@ -1,7 +1,5 @@
-# React, MUI and TypeScript Template
-This template is intended to help you start a new `React SPA` project from scratch with a comprehensive file structure, required dependencies, built-in configurations, example components and good practices for React Web Development.
-
-The project was bootstrapped with [Create React App](https://create-react-app.dev) following this [Tutorial](https://github.com/equisoide/react-mui-ts-steps). Below you will find some information about main features and how to perform common tasks.
+# React, MUI and TypeScript Template developed by: vineetMourya2023
+This project from scratch with a comprehensive file structure, required dependencies, built-in configurations, functional components and good practices for React Web Development.
 
 ## Supported Language Features
 This project supports a superset of the latest `JavaScript`/`TypeScript` standard. In addition to [ES6](http://es6-features.org) syntax features, it also supports:
@@ -21,9 +19,6 @@ Constant enums and namespaces are not supported, you can learn about the constra
 - [TypeScript 5.0.2](https://www.typescriptlang.org) with [ES6](http://es6-features.org)
 - [I18next 22.4.13](https://react.i18next.com) for internationalization
 - [React Router 6.9.0](https://reactrouter.com/) for the routing system
-
-## Documentation Tools
-- [Storybook 6.5.16](https://storybook.js.org) to document components
 
 ## Code Quality & Performance
 - [ESLint 8.36.0](https://eslint.org) with `TypeScript`, `React`, `React Hooks` and `Jest` configuration
@@ -104,7 +99,7 @@ Constant enums and namespaces are not supported, you can learn about the constra
 After cloning, your project should look like this:
 
 ```
-📦 react-mui-ts-template
+📦 user-management
 ├── 📜 .editorconfig                EditorConfig settings
 ├── 📜 .env                         Variables common to all environments
 ├── 📜 .eslintignore                Folders and files ignored by ESLint
@@ -125,11 +120,6 @@ After cloning, your project should look like this:
 │   ├── 📜 .env.qa                  Environment variables for QA
 │   ├── 📜 .env.staging             Environment variables for Staging
 │   └── 📜 .env.test                Environment variables for Unit Test
-├── 📂 .storybook
-│   ├── 📜 favicon.svg              Favicon for Storybook
-│   ├── 📜 main.js                  Storybook server behavior
-│   ├── 📜 manager.js               Customize how Storybook App renders
-│   └── 📜 preview.js               Global code that applies to all stories
 ├── 📂 .vscode
 │   ├── 📜 extensions.json          Recomended extensions to load in VS Code
 │   ├── 📜 launch.json              Launch Chrome against localhost
@@ -147,11 +137,8 @@ After cloning, your project should look like this:
     ├── 📜 setupTests.ts            Global setup before running tests
     ├── 📂 app
     │   └── 📜 index.tsx            The main App component with routes
-    ├── 📂 components/HelloWorld
-    │   ├── 📜 index.module.scss    Component styles
-    │   ├── 📜 index.stories.tsx    Storybook documentation
-    │   ├── 📜 index.test.tsx       Jest testing file
-    │   └── 📜 index.tsx            Example component definition
+    ├── 📂 components
+    │   ├── 📜 UserUpdateForm.tsx    Example component definition
     ├── 📂 lang
     │   ├── 📜 index.ts             i18next configuration
     │   ├── 📜 resources.en.json    Application texts in English
@@ -353,7 +340,7 @@ To enabble/disable StrictMode you can use the `REACT_APP_STRICT_MODE` environmen
 - [MUI Templates](https://mui.com/material-ui/getting-started/templates)
 
 ## Creator
-**Juan Cuartas** https://github.com/equisoide
+**Vineet Mourya** https://github.com/vineet1899
 
 ## Copyright and License
 Code and documentation released under [the MIT license](https://github.com/equisoide/react-mui-ts-template/blob/master/LICENSE)
