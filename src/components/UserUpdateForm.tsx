@@ -9,6 +9,7 @@ import { Button, TextField, Grid, Paper, Typography, FormControlLabel, Checkbox 
 
 import { login, getUserDetails } from '../services/auth.service';
 import { validateAccessToken } from '../services/user.service';
+import { authHeader, api } from '../services/auth-header';
 
 type Props = {};
 
@@ -19,9 +20,21 @@ const UserUpdateForm: React.FC<Props> = () => {
   const [message, setMessage] = useState<string>('');
   const [showUserUpdateForm, setShowUserUpdateForm] = useState<boolean>(false);
 
+  // useEffect(() => {
+  //   // Check if Access Token is valid
+  //   validateAccessToken()
+  //     .then(() => {
+  //       // Access Token is valid, show User Update Details form
+  //       setShowUserUpdateForm(true);
+  //     })
+  //     .catch(() => {
+  //       // Access Token is invalid, navigate to the specified URL
+  //       //navigate('https://localhost:3000/sso');
+  //     });
+  // }, []);
   useEffect(() => {
     // Check if Access Token is valid
-    validateAccessToken()
+    api.get('/isAccessTokenValid', { headers: authHeader() })
       .then(() => {
         // Access Token is valid, show User Update Details form
         setShowUserUpdateForm(true);
